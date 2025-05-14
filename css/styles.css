@@ -179,7 +179,7 @@ body {
     color: var(--color-acento);
 }
 
-/* Diseño Responsivo */
+/* Diseño Responsive */
 @media screen and (max-width: 768px) {
     .encabezado {
         flex-direction: column;

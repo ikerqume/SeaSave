@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - SeaSave</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="encabezado-nav">
+            <img src="img/logo.png" alt="Logo SeaSave">
+            <ul class="menu-principal">
+                <li><a href="quien-somos.html">Quiénes Somos</a></li>
+                <li><a href="que-hacemos.html">Qué Hacemos</a></li>
+                <li><a href="actividades.html">Actividades</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+            <div class="selector-idioma">
+                <a href="cat/contacto_cat.html">CA</a>
+                <a href="contacto.html">ES</a>
+                <a href="en/contacto_en.html">EN</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion-hero">
+            <h1>Contacta con SeaSave</h1>
+            <p>¿Quieres unirte a nuestra misión o tienes alguna pregunta? Estamos aquí para ayudarte</p>
+            <a href="#" class="boton-llamada">Escríbenos ahora</a>
+        </section>
+
+        <section class="seccion-mision">
+            <h2>Información de Contacto</h2>
+            <p><strong>Dirección:</strong> Avda. Mediterráneo, 35, 08003 Barcelona</p>
+            <p><strong>Teléfono:</strong> +34 93 555 6677</p>
+            <p><strong>Email:</strong> info@seasave.org</p>
+            <p><strong>Horario:</strong> Lunes a Viernes: 9:00 - 18:00</p>
+        </section>
+
+        <section class="seccion-quienes-somos">
+            <h2>Nuestro Equipo</h2>
+            <p>Contacta directamente con los responsables de nuestras áreas de trabajo:</p>
+            
+            <div class="miembros-equipo">
+                <div class="miembro-equipo">
+                    <img src="img/dani-vega.jpg" alt="Dani Vega">
+                    <h3>Dani Vega</h3>
+                    <p>Coordinador de Campañas</p>
+                    <p>dani.vega@seasave.org</p>
+                </div>
+                
+                <div class="miembro-equipo">
+                    <img src="img/iker-quesada.jpg" alt="Iker Quesada">
+                    <h3>Iker Quesada</h3>
+                    <p>Investigador Principal</p>
+                    <p>iker.quesada@seasave.org</p>
+                </div>
+                
+                <div class="miembro-equipo">
+                    <img src="img/aisha-delgado.jpg" alt="Aisha Delgado">
+                    <h3>Aisha Delgado</h3>
+                    <p>Responsable de Educación</p>
+                    <p>aisha.delgado@seasave.org</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="seccion-mision">
+            <h2>Escríbenos</h2>
+            <form action="#" method="post">
+                <div class="campo-formulario">
+                    <label for="nombre">Nombre completo:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="asunto">Asunto:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="voluntariado">Voluntariado</option>
+                        <option value="donacion">Donaciones</option>
+                        <option value="colaboracion">Colaboraciones</option>
+                        <option value="prensa">Prensa</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                </div>
+                
+                <div class="campo-formulario">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">He leído y acepto la política de privacidad</label>
+                </div>
+                
+                <button type="submit" class="boton-llamada">Enviar mensaje</button>
+            </form>
+        </section>
+
+        <section class="seccion-quienes-somos">
+            <h2>Nuestra Ubicación</h2>
+            <div class="mapa-contenedor">
+                <!-- Aquí iría un iframe con Google Maps -->
+                <img src="img/mapa-ubicacion.jpg" alt="Mapa de ubicación de SeaSave" style="width: 100%; max-height: 400px; object-fit: cover; border-radius: 5px;">
+            </div>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenido-pie">
+            <p>&copy; 2025 SeaSave. Todos los derechos reservados.</p>
+            <div class="redes-sociales">
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
