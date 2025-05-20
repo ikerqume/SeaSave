@@ -1,0 +1,81 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+.contenedor-principal {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+}
+
+.imagen-fondo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.7; /* Oscurecemos la imagen para mejorar el contraste con el texto */
+}
+
+.capa-texto {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+}
+
+.titulo-ong {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+.texto-mensaje {
+    font-size: 1.8rem;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+    max-width: 80%;
+    margin-bottom: 2.5rem;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.5px;
+}
+
+.boton-accion {
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #1ca3ec;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.boton-accion:hover {
+    background-color: #0d8bc4;
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Diseño responsive para dispositivos móviles */
+@media (max-width: 768px) {
+    .titulo-ong {
+        font-size: 3rem;
+    }
+    
+    .texto-mensaje {
+        font-size: 1.4rem;
+    }
+}
