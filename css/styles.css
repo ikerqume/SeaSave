@@ -358,16 +358,6 @@ body {
     .seccion-hero h1 {
         font-size: 2rem;
     }
-    
-    .miembros-equipo {
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
-    
-    .miembro-equipo {
-        max-width: 280px;
-    }
 }
 
 @media screen and (max-width: 480px) {
@@ -382,10 +372,5 @@ body {
     
     .seccion-mision, .seccion-quienes-somos {
         padding: 25px 20px;
-    }
-    
-    .miembro-equipo img {
-        width: 150px;
-        height: 150px;
     }
 }
