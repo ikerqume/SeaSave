@@ -46,7 +46,6 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: 500;
-    transition: all 0.3s ease;
     padding: 8px 15px;
     border-radius: 4px;
     letter-spacing: 0.5px;
@@ -55,7 +54,6 @@ body {
 .menu-principal li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #9decff;
-    transform: translateY(-2px);
 }
 
 /* Selector de Idioma */
@@ -186,50 +184,6 @@ body {
     line-height: 1.6;
 }
 
-/* Miembros del equipo */
-.miembros-equipo {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin-top: 30px;
-}
-
-.miembro-equipo {
-    text-align: center;
-    width: 250px;
-    transition: transform 0.3s ease;
-}
-
-.miembro-equipo:hover {
-    transform: translateY(-5px);
-}
-
-.miembro-equipo img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 15px;
-    border: 4px solid #0077be;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.miembro-equipo:hover img {
-    border-color: #00a86b;
-    transform: scale(1.05);
-}
-
-.miembro-equipo h3 {
-    color: #0077be;
-    margin-bottom: 5px;
-}
-
-.miembro-equipo p {
-    color: #555;
-}
-
 /* Formulario */
 .campo-formulario {
     margin-bottom: 20px;
@@ -334,7 +288,6 @@ body {
     width: 280px;
     padding: 25px;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .tarjeta:hover {
