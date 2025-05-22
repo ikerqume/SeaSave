@@ -154,16 +154,6 @@ body {
     padding-bottom: 10px;
 }
 
-.seccion-mision h2:after, .seccion-quienes-somos h2:after {
-    content: "";
-    position: absolute;
-    width: 60px;
-    height: 3px;
-    background-color: #00a86b;
-    bottom: 0;
-    left: 0;
-}
-
 .seccion-quienes-somos h3 {
     color: #00a86b;
     margin: 20px 0 15px;
