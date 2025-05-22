@@ -87,7 +87,7 @@ body {
 /* Sección Heroica */
 .seccion-hero {
     text-align: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url('../img/fondo-oceano.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.262), rgba(0, 0, 0, 0.344)), url('../img/fotobanner.jpg');
     background-size: cover;
     background-position: center;
     color: #ffffff;
