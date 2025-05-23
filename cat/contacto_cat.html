@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacte - SeaSave</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="encabezado-nav">
+            <img src="../img/logo.png" alt="Logo SeaSave">
+            <ul class="menu-principal">
+                <li><a href="quien-somos_cat.html"><i class="fa fa-users"></i> Qui Som</a></li>
+                <li><a href="que-hacemos_cat.html"><i class="fa fa-tasks"></i> Què Fem</a></li>
+                <li><a href="actividades_cat.html"><i class="fa fa-calendar"></i> Activitats</a></li>
+                <li><a href="unete_cat.html"><i class="fa fa-hand-holding-heart"></i> Uneix-te a SeaSave</a></li>
+                <li><a href="contacto_cat.html"><i class="fa fa-envelope"></i> Contacte</a></li>
+            </ul>
+            <div class="selector-idioma">
+                <a href="index_cat.html">CA</a>
+                <a href="../index.html">ES</a>
+                <a href="../en/index_en.html">EN</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contenido-principal">
+        <section class="seccion-banner">
+            <h1><i class="fas fa-envelope"></i> Contacta amb SeaSave</h1>
+            <p>Vols unir-te a la nostra missió o tens alguna pregunta? Estem aquí per ajudar-te</p>
+            <a href="#" class="boton-llamada"><i class="fas fa-pen"></i> Escriu-nos ara</a>
+        </section>
+
+        <section class="seccion-mision">
+            <h2><i class="fas fa-info-circle"></i> Informació de Contacte</h2>
+            <p><strong><i class="fas fa-map-marker-alt"></i> Adreça:</strong> Avda. Mediterràni, 35, 08003 Barcelona</p>
+            <p><strong><i class="fas fa-phone"></i> Telèfon:</strong> +34 93 555 6677</p>
+            <p><strong><i class="fas fa-envelope"></i> Email:</strong> info@seasave.org</p>
+            <p><strong><i class="fas fa-clock"></i> Horari:</strong> Dilluns a Divendres: 9:00 - 18:00</p>
+        </section>
+        
+        <section class="seccion-quienes-somos">
+            <h2><i class="fas fa-map-marked-alt"></i> La Nostra Ubicació</h2>
+            <div class="mapa-contenedor">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3238.1574585233693!2d2.0882770421019643!3d41.284318720285135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4b14ead63ee51%3A0xee0598791a28cb81!2sFundaci%C3%B3n%20para%20la%20Conservaci%C3%B3n%20y%20Recuperaci%C3%B3n%20de%20Animales%20Marinos%20(CRAM)!5e0!3m2!1ses!2ses!4v1747851163600!5m2!1ses!2ses" width="1200" height="450" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </section>
+
+        <section id="formulario" class="seccion-mision">
+            <h2><i class="fas fa-paper-plane"></i> Escriu-nos</h2>
+            <form action="#" method="post" class="formulario-contacto">
+                <div class="campo-formulario">
+                    <label for="nombre"><i class="fas fa-user"></i> Nom complet:</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="El teu nom complet" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="email"><i class="fas fa-envelope"></i> Email:</label>
+                    <input type="email" id="email" name="email" placeholder="el-teu-email@exemple.com" required>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="asunto"><i class="fas fa-tag"></i> Assumpte:</label>
+                    <select id="asunto" name="asunto">
+                        <option value="voluntariado">Voluntariat</option>
+                        <option value="donacion">Donacions</option>
+                        <option value="colaboracion">Col·laboracions</option>
+                        <option value="prensa">Premsa</option>
+                        <option value="otro">Altre</option>
+                    </select>
+                </div>
+                
+                <div class="campo-formulario">
+                    <label for="mensaje"><i class="fas fa-comment"></i> Missatge:</label>
+                    <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escriu el teu missatge aquí..." required></textarea>
+                </div>
+                
+                <div class="campo-formulario checkbox-field">
+                    <input type="checkbox" id="privacidad" name="privacidad" required> 
+                    <label for="privacidad"><i class="fas fa-lock"></i> He llegit i accepto la <a href="#" class="enlace-privacidad">política de privacitat</a></label>
+                </div>
+                
+                <button type="submit" class="boton-llamada"><i class="fas fa-paper-plane"></i> Enviar missatge</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="pie-pagina">
+        <div class="contenido-pie">
+            <p>&copy; 2025 SeaSave. Tots els drets reservats.</p>
+            <div class="redes-sociales">
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

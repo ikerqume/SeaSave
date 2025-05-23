@@ -1,9 +1,15 @@
+/* ========================================
+   ESTILOS GLOBALES 
+   ======================================== */
+
+/* Elimina márgenes y rellenos por defecto, y usa box-sizing para incluir padding y border en el tamaño total */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* Estilos base para el body: tipografía, color y fondo */
 body {
     font-family: 'Segoe UI', Arial, sans-serif;
     line-height: 1.6;
@@ -12,14 +18,19 @@ body {
     font-size: 16px;
 }
 
-/* Encabezado */
+/* ========================================
+   ENCABEZADO Y NAVEGACIÓN
+   ======================================== */
+
+/* Estilos para el encabezado principal */
 .encabezado {
-    background-color: #0077be;
-    color: #ffffff;
+    background-color: #0077be; /* Fondo azul */
+    color: #ffffff;            /* Texto blanco */
     padding: 15px 30px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Sombra sutil */
 }
 
+/* Contenedor de navegación: usa flexbox para distribuir elementos */
 .encabezado-nav {
     display: flex;
     justify-content: space-between;
@@ -27,21 +38,26 @@ body {
     width: 100%;
 }
 
+/* Logo con efecto hover */
 .encabezado-nav img {
     max-height: 60px;
     max-width: 180px;
+    transition: transform 0.3s ease;
 }
 
+/* Efecto de escala al pasar el mouse sobre el logo */
 .encabezado-nav img:hover {
     transform: scale(1.05);
 }
 
+/* Menú principal de navegación: horizontal y con separación */
 .menu-principal {
     display: flex;
     list-style: none;
     gap: 20px;
 }
 
+/* Enlaces del menú principal: estilos de color, padding y transición */
 .menu-principal li a {
     color: #ffffff;
     text-decoration: none;
@@ -49,19 +65,26 @@ body {
     padding: 8px 15px;
     border-radius: 4px;
     letter-spacing: 0.5px;
+    transition: all 0.3s ease;
 }
 
+/* Efecto hover en los enlaces del menú */
 .menu-principal li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
     color: #9decff;
 }
 
-/* Selector de Idioma */
+/* ========================================
+   SELECTOR DE IDIOMA
+   ======================================== */
+
+/* Contenedor del selector de idioma */
 .selector-idioma {
     display: flex;
     gap: 10px;
 }
 
+/* Enlaces del selector de idioma */
 .selector-idioma a {
     color: #ffffff;
     text-decoration: none;
@@ -72,20 +95,29 @@ body {
     font-size: 14px;
 }
 
+/* Efecto hover en el selector de idioma */
 .selector-idioma a:hover {
     background-color: #ffffff;
     color: #0077be;
 }
 
-/* Contenido Principal */
+/* ========================================
+   CONTENIDO PRINCIPAL
+   ======================================== */
+
+/* Contenedor principal del contenido */
 .contenido-principal {
     max-width: 1200px;
     margin: 0 auto;
     padding: 30px 20px;
 }
 
-/* Sección Heroica */
-.seccion-hero {
+/* ========================================
+   SECCIÓN banner (BANNER PRINCIPAL)
+   ======================================== */
+
+/* Banner principal con imagen de fondo y gradiente */
+.seccion-banner {
     text-align: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.262), rgba(0, 0, 0, 0.344)), url('../img/fotobanner.jpg');
     background-size: cover;
@@ -97,14 +129,16 @@ body {
     box-shadow: 0 8px 16px rgba(0, 119, 190, 0.2);
 }
 
-.seccion-hero h1 {
+/* Título del banner */
+.seccion-banner h1 {
     font-size: 2.8rem;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     font-weight: 700;
 }
 
-.seccion-hero p {
+/* Texto del banner */
+.seccion-banner p {
     font-size: 1.2rem;
     margin-bottom: 30px;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
@@ -113,6 +147,7 @@ body {
     margin-right: auto;
 }
 
+/* Botón de llamada a la acción */
 .boton-llamada {
     display: inline-block;
     background-color: #00a86b;
@@ -127,17 +162,23 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+/* Efecto hover en el botón */
 .boton-llamada:hover {
     background-color: #008f5b;
     transform: translateY(-3px);
     box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
+/* Efecto al hacer clic en el botón */
 .boton-llamada:active {
     transform: translateY(1px);
 }
 
-/* Secciones */
+/* ========================================
+   SECCIONES DE CONTENIDO
+   ======================================== */
+
+/* Secciones de misión y quiénes somos */
 .seccion-mision, .seccion-quienes-somos {
     background-color: #ffffff;
     padding: 40px 30px;
@@ -146,6 +187,7 @@ body {
     margin-bottom: 40px;
 }
 
+/* Títulos de las secciones */
 .seccion-mision h2, .seccion-quienes-somos h2 {
     color: #0077be;
     margin-bottom: 20px;
@@ -154,16 +196,19 @@ body {
     padding-bottom: 10px;
 }
 
+/* Subtítulos en quiénes somos */
 .seccion-quienes-somos h3 {
     color: #00a86b;
     margin: 20px 0 15px;
 }
 
+/* Párrafos de las secciones */
 .seccion-mision p, .seccion-quienes-somos p {
     margin-bottom: 15px;
     line-height: 1.7;
 }
 
+/* Listas en quiénes somos */
 .seccion-quienes-somos ul {
     margin-left: 20px;
     margin-bottom: 20px;
@@ -174,11 +219,64 @@ body {
     line-height: 1.6;
 }
 
-/* Formulario */
+/* ========================================
+   TARJETAS DE OPCIONES
+   ======================================== */
+
+/* Contenedor de tarjetas */
+.tarjetas-opciones {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin: 40px 0;
+}
+
+/* Tarjeta individual */
+.tarjeta {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    width: 280px;
+    padding: 25px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en la tarjeta */
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Icono de la tarjeta */
+.tarjeta .icono {
+    font-size: 3rem;
+    color: #0077be;
+    margin-bottom: 15px;
+}
+
+/* Título de la tarjeta */
+.tarjeta h3 {
+    color: #0077be;
+    margin-bottom: 15px;
+}
+
+/* Texto de la tarjeta */
+.tarjeta p {
+    margin-bottom: 20px;
+}
+
+/* ========================================
+   FORMULARIOS
+   ======================================== */
+
+/* Espaciado entre campos del formulario */
 .campo-formulario {
     margin-bottom: 20px;
 }
 
+/* Etiquetas de los campos */
 .campo-formulario label {
     display: block;
     margin-bottom: 8px;
@@ -186,6 +284,7 @@ body {
     color: #0077be;
 }
 
+/* Inputs, selects y textarea: estilos generales */
 .campo-formulario input[type="text"],
 .campo-formulario input[type="email"],
 .campo-formulario select,
@@ -199,6 +298,7 @@ body {
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+/* Efecto focus en los campos */
 .campo-formulario input[type="text"]:focus,
 .campo-formulario input[type="email"]:focus,
 .campo-formulario select:focus,
@@ -208,11 +308,16 @@ body {
     box-shadow: 0 0 5px rgba(0, 119, 190, 0.3);
 }
 
+/* Checkbox con margen derecho */
 .campo-formulario input[type="checkbox"] {
     margin-right: 8px;
 }
 
-/* Mapa */
+/* ========================================
+   MAPA
+   ======================================== */
+
+/* Contenedor del mapa con sombra y bordes redondeados */
 .mapa-contenedor {
     margin-top: 20px;
     border-radius: 8px;
@@ -220,7 +325,11 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* Pie de Página */
+/* ========================================
+   PIE DE PÁGINA
+   ======================================== */
+
+/* Estilos para el pie de página */
 .pie-pagina {
     background-color: #0077be;
     color: #ffffff;
@@ -229,11 +338,13 @@ body {
     margin-top: 50px;
 }
 
+/* Contenido centrado en el pie */
 .contenido-pie {
     max-width: 1200px;
     margin: 0 auto;
 }
 
+/* Redes sociales en el pie */
 .redes-sociales {
     margin-top: 20px;
     display: flex;
@@ -241,136 +352,177 @@ body {
     gap: 20px;
 }
 
+/* Enlaces de redes sociales */
 .redes-sociales a {
     color: #ffffff;
     text-decoration: none;
     font-size: 18px;
     padding: 8px 12px;
+    transition: all 0.3s ease;
 }
 
+/* Efecto hover en redes sociales */
 .redes-sociales a:hover {
     color: #00bfff;
-    transform: scale(1.5);
+    transform: scale(1.2);
 }
 
-/* Iconos */
+/* ========================================
+   ICONOS
+   ======================================== */
+
+/* Margen para iconos generales */
 .fa {
     margin-right: 5px;
 }
 
+/* Iconos en redes sociales: tamaño y sin margen derecho extra */
 .redes-sociales .fa {
     margin-right: 0;
     font-size: 20px;
 }
 
-.tarjetas-opciones {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-    margin: 40px 0;
-        }
-        
-.tarjeta {
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    width: 280px;
-    padding: 25px;
-    text-align: center;
-}
+/* ========================================
+   DISEÑO RESPONSIVE
+   ======================================== */
 
-.tarjeta:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
+/* Tablets (768px y menos) */
+@media screen and (max-width: 768px) {
+    /* Ajustes de padding en encabezado */
+    .encabezado {
+        padding: 20px 15px;
+    }
 
-.tarjeta .icono {
-    font-size: 3rem;
-    color: #0077be;
-    margin-bottom: 15px;
-}
-
-.tarjeta h3 {
-    color: #0077be;
-    margin-bottom: 15px;
-}
-
-.tarjeta p {
-    margin-bottom: 20px;
-}
-        
-
-
-/* Diseño Responsive */
-@media screen and (max-width: 960px) {
+    /* Navegación en columna */
     .encabezado-nav {
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
     }
-    
-    .menu-principal {
-        order: 3;
-        width: 100%;
-        justify-content: center;
-        margin-top: 15px;
+
+    /* Logo centrado */
+    .encabezado-nav img {
+        order: 1;
+        margin-bottom: 10px;
     }
-    
+
+    /* Selector de idioma en segunda posición */
     .selector-idioma {
         order: 2;
+        margin: 10px 0;
+    }
+
+    /* Menú principal horizontal compacto */
+    .menu-principal {
+        order: 3;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+        width: 100%;
+    }
+    
+    .menu-principal li a {
+        padding: 10px 15px;
+        font-size: 14px;
+        border-radius: 4px;
+    }
+
+    .menu-principal li a:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+        color: #9decff;
+    }
+    
+    /* Ajustes de la sección banner */
+    .seccion-banner {
+        padding: 50px 20px;
+    }
+    
+    .seccion-banner h1 {
+        font-size: 2.2rem;
+    }
+
+    .seccion-banner p {
+        font-size: 1.1rem;
+    }
+
+    /* Ajustes de las tarjetas */
+    .tarjetas-opciones {
+        gap: 20px;
+    }
+
+    .tarjeta {
+        width: 100%;
+        max-width: 350px;
     }
 }
 
-@media screen and (max-width: 768px) {
+/* Móviles (480px y menos) */
+@media screen and (max-width: 480px) {
+    /* Padding reducido en encabezado */
     .encabezado {
-        padding: 15px;
+        padding: 15px 10px;
     }
 
-    .encabezado-nav {
-        flex-direction: column;
-        align-items: center;
+    /* Logo más pequeño */
+    .encabezado-nav img {
+        max-height: 50px;
+        max-width: 150px;
     }
 
+    /* Menú apilado verticalmente */
     .menu-principal {
         flex-direction: column;
         align-items: center;
-        margin-top: 20px;
-        gap: 10px;
+        gap: 8px;
+        width: 100%;
     }
     
     .menu-principal li {
         width: 100%;
-        text-align: center;
+        max-width: 200px;
     }
     
     .menu-principal li a {
         display: block;
-        padding: 12px 0;
+        text-align: center;
+        padding: 12px 20px;
+        width: 100%;
     }
 
     .selector-idioma {
-        margin-top: 20px;
+        gap: 8px;
     }
     
-    .seccion-hero {
-        padding: 50px 20px;
+    .seccion-banner {
+        padding: 40px 15px;
     }
     
-    .seccion-hero h1 {
-        font-size: 2rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .seccion-hero h1 {
+    .seccion-banner h1 {
         font-size: 1.8rem;
+    }
+
+    .seccion-banner p {
+        font-size: 1rem;
     }
     
     .boton-llamada {
         width: 100%;
+        max-width: 300px;
         text-align: center;
+        padding: 15px 25px;
     }
     
     .seccion-mision, .seccion-quienes-somos {
         padding: 25px 20px;
+    }
+
+    .seccion-mision h2, .seccion-quienes-somos h2 {
+        font-size: 1.7rem;
+    }
+
+    .tarjeta {
+        padding: 20px 15px;
     }
 }
